@@ -1,0 +1,13 @@
+.Main{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 700px;
+}
+.Enter{
+    margin-top: 154px;
+}
+.SignInButton{
+    margin-top: 20px;
+}

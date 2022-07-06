@@ -1,0 +1,7 @@
+.chatwindow::-webkit-scrollbar { width: 3px; height: 3px;}
+.chatwindow::-webkit-scrollbar-button {  background-color:'blue'; }
+.chatwindow::-webkit-scrollbar-track {  background-color: #999;}
+.chatwindow::-webkit-scrollbar-track-piece { background-color: #ffffff;}
+.chatwindow::-webkit-scrollbar-thumb { height: 50px; background-color: #666; border-radius: 3px;}
+.chatwindow::-webkit-scrollbar-corner { background-color: #999;}
+.chatwindow::-webkit-resizer { background-color: #666;}
