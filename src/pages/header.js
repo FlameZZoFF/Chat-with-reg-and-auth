@@ -3,7 +3,7 @@ import { Link} from 'react-router-dom'
 import {auth} from '../firebase/firebase-config'
 import { onAuthStateChanged, signOut } from 'firebase/auth'
 import {AppBar,Grid,Toolbar,IconButton,Button,Avatar} from '@mui/material'
-import './header.css'
+import '../styles/header.css'
 export default function Header() {
   const [user,setUser] = useState({})
   const [hideButtonExit,setHideButtonExit] = useState(true)

@@ -1,7 +1,7 @@
 import React from 'react'
 import {Outlet,Navigate} from 'react-router-dom'
-import Header from '../header/header'
-import SignIn from '../SignIn/SignIn'
+import Header from '../pages/header'
+
 
 export default function Layout() {
 

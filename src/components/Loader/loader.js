@@ -1,5 +1,5 @@
 import React from 'react'
-import './loader.css'
+import '../../styles/loader.css'
 import { Container } from '@mui/system'
 import { Grid } from '@mui/material'
 export default function loader() {

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './SignIn.css'
+import '../styles/SignIn.css'
 import {Link} from 'react-router-dom'
 import {TextField, Button} from '@mui/material'
 import {signInWithEmailAndPassword } from 'firebase/auth'
@@ -25,6 +25,7 @@ export default function Main() {
   }
   return (
     <div className='Main'>
+      <form>
       <div className ='Enter'>
       <TextField id="standard-basic" label="Введите почту" variant="standard" placeholder='Почта' onKeyPress={KeyPressEnter} onChange ={(e)=>{setLogin(e.target.value)}} ></TextField>
       <br/>
@@ -35,6 +36,7 @@ export default function Main() {
       <p style={{color:'red',fontSize:'14px'}}>{error}</p>
       <Link to ='/Registration'>У меня нет аккаунта</Link>
       </div>
+      </form>
     </div>
   )
 }

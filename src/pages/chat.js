@@ -4,9 +4,9 @@ import {useCollectionData} from 'react-firebase-hooks/firestore'
 import {useAuthState} from 'react-firebase-hooks/auth'
 import {auth, firestore} from '../firebase/firebase-config'
 import { collection,addDoc,orderBy,query} from 'firebase/firestore'
-import Loader from '../Loader/loader'
+import Loader from '../components/Loader/loader'
 import firebase from 'firebase/compat/app'
-import './chat.css'
+import '../styles/chat.css'
 export default function Chat() {
     const dummy = useRef()
     const [MessageText,setMessageText] = useState()

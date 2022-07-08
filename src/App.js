@@ -1,15 +1,15 @@
 import React from 'react'
 import {Routes, Route ,Navigate} from 'react-router-dom'
-import SignIn from './components/SignIn/SignIn'
-import RegistrationForm from './components/RegistrationForm/RegistrationForm'
-import Layout from './components/Routes/layout'
-import RequireAuth from './components/Routes/RequireAuth'
-import Chat from './components/chat/chat'
+import SignIn from './pages/SignIn'
+import RegistrationForm from './pages/RegistrationForm'
+import Layout from './Routes/layout'
+import RequireAuth from './Routes/RequireAuth'
+import Chat from './pages/chat'
 import { useAuthState } from 'react-firebase-hooks/auth'
-import { auth } from './components/firebase/firebase-config'
+import { auth } from './firebase/firebase-config'
 import Loader from './components/Loader/loader'
-import PersonalArea from './components/personalArea/PersonalArea'
-import IfAuth from './components/Routes/IfAuth'
+import PersonalArea from './pages/PersonalArea'
+import IfAuth from './Routes/IfAuth'
 export default function App() {
   const [user, loading , error] = useAuthState(auth)
   if (loading) {
