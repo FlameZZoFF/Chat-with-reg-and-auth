@@ -5,3 +5,23 @@
 .chatwindow::-webkit-scrollbar-thumb { height: 50px; background-color: #666; border-radius: 3px;}
 .chatwindow::-webkit-scrollbar-corner { background-color: #999;}
 .chatwindow::-webkit-resizer { background-color: #666;}
+.chatInput{
+    width: 100%;
+    margin-top: 10px;
+    height:40px;
+}
+.RepeatClose{
+    cursor: pointer;
+    border: 0;
+    background: 0;
+    font-size: 18px;
+    width: 20px;
+    height: 20px;
+}
+.LoadImage{
+    cursor: pointer;
+    margin-left: 45px;
+    margin-top: 70px;
+    position: absolute;
+    width: 30px;
+}

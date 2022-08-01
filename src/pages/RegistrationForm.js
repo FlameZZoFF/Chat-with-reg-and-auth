@@ -5,6 +5,7 @@ import {auth} from '../firebase/firebase-config'
 import { Button,TextField,Checkbox} from '@mui/material'
 import { updateProfile } from 'firebase/auth'
 import { Formik } from 'formik'
+import {Link} from 'react-router-dom'
 import * as yup from 'yup'
 export default function RegistrationForm() {
    const [succesRegister,setSuccesRegister] = useState()
@@ -69,7 +70,9 @@ export default function RegistrationForm() {
             <br/>
             {touched.checkbox && errors.checkbox && <p style={{fontSize:'14px',color:'red'}}>{errors.checkbox}</p>}
             <Button variant="contained" disabled={!isValid && !dirty} onClick={handleSubmit} type={'submit'} >Регистрация</Button>
+            {values.RegCheck}
             <br/> 
+            <Link to='/SignIn'><p>У меня уже есть аккаунт</p></Link>
         </div>
         )}
 

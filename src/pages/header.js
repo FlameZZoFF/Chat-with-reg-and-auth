@@ -30,9 +30,9 @@ export default function Header() {
   <div className='header'>
   <AppBar position="static">
   <Toolbar variant="dense">
-  <Grid container style={{justifyContent:'center'}}>
-  <IconButton  edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>{auth.currentUser ? <Button><Link style={{textDecoration:'none',color:'white'}} to ='/Chat' >Чат</Link></Button>  : <Button><Link style={{textDecoration:'none',color:'white'}} to = '/Registration' >Регистрация</Link></Button>}</IconButton> 
-  <IconButton  edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>{auth.currentUser ? <Button variant='contained' ><Link style={{textDecoration:'none',color:'white'}} to ='/PersonalArea' >Личный кабинет</Link></Button> : <Button><Link style={{textDecoration:'none',color:'white'}} to ='/SignIn' >Вход</Link></Button> }</IconButton>
+  <Grid className='Icons' container style={{justifyContent:'center'}}>
+  <IconButton className='Button12'  edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>{auth.currentUser ? <Button className='Button12'><Link style={{textDecoration:'none',color:'white'}} to ='/Chat' >Чат</Link></Button>  : <Button><Link style={{textDecoration:'none',color:'white'}} to = '/Registration' >Регистрация</Link></Button>}</IconButton> 
+  <IconButton className='Button12'  edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>{auth.currentUser ? <Button variant='contained' className='Button12' ><Link style={{textDecoration:'none',color:'white'}} to ='/PersonalArea' >Личный кабинет</Link></Button> : <Button><Link style={{textDecoration:'none',color:'white'}} to ='/SignIn' >Вход</Link></Button> }</IconButton>
   </Grid>
   <label hidden={hideButtonExit}>Привет {user?.displayName}</label>
   <div>{auth.currentUser ? <Avatar src={user?.photoURL} style={{marginRight:'14px'}}/> : ''} </div>
