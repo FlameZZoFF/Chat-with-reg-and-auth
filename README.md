@@ -12,3 +12,4 @@ https://react-realtime-chat-with-reg.herokuapp.com/
 <br>
 4.formik and yup
 <h1>Photos</h1>
+<img src='image/image.png'/>
