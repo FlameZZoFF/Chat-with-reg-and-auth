@@ -2,7 +2,7 @@ First you need to registration.
 <br>
 U can load photo with drag and drop to chat input
 <h1>Deploy</h1>
-https://react-realtime-chat-with-reg.herokuapp.com/
+https://63a066b51f184e76493a2a0d--extraordinary-beijinho-5c29f0.netlify.app
 <h1>Technology Stack</h1>
 1.Firebase,firestore
 <br>
